@@ -1,0 +1,237 @@
+header {
+  margin-bottom: 50px;
+}
+
+.js-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+}
+
+.main-conteiner {
+  width: 100vh;
+}
+
+.themes-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.themes-title {
+  margin-bottom: 30px;
+}
+
+.themes-list {
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+.themes-list li {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 25px;
+}
+
+.card-progress-title {
+  margin-bottom: 15px;
+}
+
+.card-body {
+  padding: 30px 0;
+}
+
+.card-progress-common {
+  position: relative;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+}
+
+.js-header {
+  height: 80px;
+}
+
+.js-nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.js-nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-around;
+  font-size: 100px;
+  font-family: Roboto;
+  color: white;
+  height: 300px;
+  align-items: center;
+}
+
+.js-btn {
+  display: flex;
+  height: 50px;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-nav {
+  display: flex;
+  align-content: center;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.addFormDiv {
+  display: flex;
+  justify-content: center;
+}
+
+/* Flip Card */
+.flip-card {
+  /* context for child positioning */
+  position: relative;
+  flex: 1 1 25%;
+  max-width: calc(50% - -9rem); /* half minus gap to make wrapped 3rd item match widths of first row items */
+  min-width: 16rem;
+  display: flex;
+  transform-style: preserve-3d;
+  transition: 0.5s transform;
+  aspect-ratio: 1 / 1;
+  perspective: 30rem; /* experiment with this! */
+  margin-bottom: 15px;
+}
+
+.no-js .flip-card:focus,
+.flip-card.is-flipped {
+  transform: rotateY(-180deg);
+}
+
+.flip-card__front,
+.flip-card__back {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 100%;
+  padding: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: 1s 1s visibility;
+  border-radius: 8px;
+}
+
+.flip-card__front {
+  background-color: #032830;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.flip-card__back {
+  transform: rotateY(-180deg) translateX(100%);
+  visibility: hidden;
+  background-color: #fff;
+  transition-delay: 0s;
+
+  color: black;
+}
+
+.no-js .flip-card__back,
+.is-flipped .flip-card__back {
+  visibility: visible;
+}
+
+.flip-card__content {
+  font-size: 30px;
+  flex: 0 0 auto;
+  margin: auto 0;
+}
+
+.no-js .flip-card__button {
+  display: none;
+}
+
+.flip-card__button {
+  all: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -0.25rem; /* account for border */
+  top: -0.25rem; /* account for border */
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.25s border-color;
+}
+
+.flip-card__button:focus:not(:focus-visible) {
+  border-color: transparent !important;
+}
+
+/* Formatting of content */
+.flip-card__content * {
+  margin: 0;
+}
+
+.flip-card__content > * + * {
+  margin-top: 1.4em;
+}
+
+.flip-card h2 {
+  font-family: 'freight-sans-pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.flip-card p {
+  text-align: center;
+}
+
+.btn-add-to-learn {
+  z-index: 100;
+}
+
+.bg-img {
+  margin-top: -50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://s1.1zoom.me/b5050/522/364679-svetik_1920x1080.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
